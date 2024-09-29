@@ -32,7 +32,7 @@ class Form(ft.UserControl):
             label = "Buscar por nombre",
             suffix_icon = ft.icons.SEARCH,
             border = ft.InputBorder.UNDERLINE,
-            label_style = ft.TextStyle(color = "white"),
+            label_style = ft.TextStyle(color = "black"),
             on_change=self.search_data
         )
         self.data_table = ft.DataTable(
@@ -54,7 +54,7 @@ class Form(ft.UserControl):
         self.show_data()
 
         self.form = ft.Container(
-            bgcolor = "#222222",
+            bgcolor = "#E2EAF4",
             border_radius = 10,
             col = 4,
             padding=10,
@@ -93,7 +93,7 @@ class Form(ft.UserControl):
         )
 
         self.table = ft.Container(
-            bgcolor = "#222222",
+            bgcolor = "#E7DDFF",
             border_radius = 10,
             col = 8,
             content= ft.Column(
@@ -105,15 +105,15 @@ class Form(ft.UserControl):
                                 self.search_field,
                                 ft.IconButton(tooltip="Editar",
                                               icon = ft.icons.EDIT,
-                                              icon_color="white",
+                                              icon_color="black",
                                               on_click = self.edit_field_text),
                                 ft.IconButton(tooltip="Descargar PDF",
                                               icon = ft.icons.PICTURE_AS_PDF,
-                                              icon_color="white",
+                                              icon_color="black",
                                               on_click=self.save_pdf),
                                 ft.IconButton(tooltip="Descargar EXCEL",
                                               icon = ft.icons.SAVE_ALT,
-                                              icon_color="white",
+                                              icon_color="black",
                                               on_click=self.save_excel),
                             ]
                         )
